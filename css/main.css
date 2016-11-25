@@ -1,0 +1,510 @@
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+}
+
+/*Шапка*/
+
+header {
+  min-height: 90px;
+  background-color: #eeeeee;
+}
+
+header nav {
+  display: inline-block;
+}
+header nav ul {
+    padding-left: 15px
+}
+header ul li {
+  display: inline-block;
+  padding: 18px;
+}
+.menu{
+  color: #4a90e2;
+}
+.menu:hover {
+  color: #155fb5;
+}
+
+.new-discussion {
+  position: absolute;
+  display: block;
+  line-height: 45px;
+  height: 48px;
+  width: 180px;
+  background-color: #707070;
+  top: 23px;
+  right: 263px;
+  color: #ffffff;
+  font-family: "RobotoBold";
+  font-size: 1.3em;
+  text-align: center;
+  border: 1px solid #a2a2a2;
+}
+.new-discussion:hover {
+  background-color: #4d4d4d;
+  cursor: pointer;
+}
+header .fa-bell {
+  position: absolute;
+  top: 30px;
+  right: 199px;
+  font-size: 2em;
+  color: #95909e;
+}
+header .fa-bell:hover {
+  cursor: pointer;
+  color: #4d4d4d;
+}
+.level-bar {
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 112px;
+  top: 16px;
+  border-radius: 50%;
+  background: #d8d8d8;
+}
+.level-bar::before {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-top: 30px solid #4a4a4a ;
+  border-bottom: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  border-radius: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.level-bar::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  top: 5px;
+  left: 5px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.level {
+  position: absolute;
+  display: block;
+  top: 13px;
+  right: 0;
+  text-align: left;
+  font-size: 0.9em;
+  font-family: "RobotoLight";
+  line-height: 18px;
+  padding-right: 20px
+}
+.level span {
+  font-family: "RobotoBlack";
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.searching {
+  position: relative;
+  min-height: 64px;
+}
+.browse {
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+  padding: 19px;
+  font-size: 1.2em;
+  float: left;
+}
+.fa-caret-down {
+  padding-left: 8px;
+}
+.search {
+  line-height: 65px;
+}
+.fa-search {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 10px;
+  top: 3px;
+  color: #c1bcbc;
+}
+.search input {
+  width: 400px;
+  height: 50px;
+  border: none;
+  padding: 0 10px;
+}
+
+/*Основная часть сайта*/
+
+main {
+  position: absolute;
+  top: 154px;
+  width: 100%;
+  height: auto;
+  background-color: #eeeeee;
+  overflow: hidden;
+}
+.gray-line {
+  position: absolute;
+  width: 100%;
+  height: 174px;
+  background-color: #4a4a4a;
+}
+.photo {
+  position: relative;
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  top: 109px;
+  left: 42px;
+  background-color: #d8d8d8;
+  z-index: 2;
+}
+.hello {
+  position: relative;
+  display: block;
+  max-width: 652px;
+  background-color: #fff;
+  height: 100px;
+  border: 1px solid #979797;
+  line-height: 20px;
+  padding: 30px;
+  left: 200px;
+  top: -58px;
+  font-size: 0.9em;
+}
+.hello span {
+  font-family: RobotoBlack;
+}
+.hello::before {
+  content: "";
+  position: absolute;
+  left: -29px;
+  top: 64px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 30px solid #fff;
+  border-bottom: 10px solid transparent;
+}
+main section {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  padding: 40px;
+  top: -46px;
+}
+main .col-lg-6 {
+  padding-right: 0;
+}
+main .col-lg-3 {
+  padding: 0;
+}
+.description {
+  position: relative;
+  top: -46px;
+}
+.icons {
+  position: relative;
+  left: 130px;
+  color: #777777;
+}
+.icons > i {
+  font-size: 2.3em;
+  margin: 0 60px 0 0;
+}
+.icons > i:hover {
+  color: #4d4d4d;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.about h2 {
+  font-family: RobotoBlack;
+  margin-bottom: 8px;
+}
+.about p {
+  line-height: 28px;
+  margin: 0px;
+}
+.about span {
+  background-color: #4a4a4a;
+  color: #fff;
+  padding: 1px 10px 1px 10px;
+  margin-left: 8px;
+}
+.skills h4,
+aside h4 {
+  margin: 0;
+  padding-bottom: 10px;
+  font-family: RobotoBlack;
+}
+.skills h2 {
+  margin-bottom: 0;
+  font-family: "RobotoBlack";
+}
+.skills p {
+  margin: 5px 0;
+}
+.progress {
+  height: 15px;
+  background-color: #777777;
+}
+.progress-1 {
+  max-width: 450px;
+}
+.progress-2 {
+  max-width: 350px;
+}
+.progress-3 {
+  max-width: 250px;
+}
+.projects span {
+  font-family: "RobotoMedium";
+}
+.projects h4,
+aside h4,
+.library h4
+{
+  margin-top: 0;
+  font-family: RobotoBlack;
+}
+.projects hr,
+aside hr {
+  height: 2px;
+  margin: 40px 0 40px 0;
+}
+.projects p {
+  margin-top: 35px;
+}
+
+/*Область контактов*/
+
+aside {
+  position: relative;
+  top: 174px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  padding: 25px;
+  }
+aside h4,{
+  margin-bottom: 0;
+  font-family: RobotoBlack;
+}
+aside ul li p {
+  line-height: 24px;
+  margin: 0;
+  font-size: .8em;
+}
+aside ul {
+  list-style: none;
+  padding-left: 50px;
+  margin-bottom: 0;
+}
+aside ul li {
+  position: relative;
+  padding-bottom: 25px;
+}
+aside ul li:last-child {
+  padding: 0;
+}
+.fa-li {
+  position: absolute;
+  top: 9px;
+  font-size: 2em;
+  color: #95909e;
+}
+aside h4 {
+  padding-top: 30px;
+}
+aside h4:nth-child(4),
+aside h4:nth-child(1){
+  padding-top: 0;
+}
+.skill-badge {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  width: auto;
+  min-height: 370px;
+}
+.gray {
+  background-color: #979797;
+  position: relative;
+  width: 100%;
+  height: 115px;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid #e9e9e9;
+}
+.skill-badge::before {
+  content: "";
+  width: 60px;
+  height: 10px;
+  background-color: #d8d8d8;
+  position: absolute;
+  border-radius: 5px;
+  left: 85px;
+  top: 17px;
+  z-index: 2
+}
+.skill-badge::after {
+  content: "";
+  width: 63px;
+  height: 63px;
+  background-color: #d8d8d8;
+  position: absolute;
+  border-radius: 50%;
+  left: 19px;
+  top: 82px;
+  z-index: 20;
+}
+.skill-badge h4 {
+  padding: 50px 0 0 20px;
+}
+.skill-badge p {
+  margin: 0;
+  font-size: 0.8;
+  padding: 0 10px 20px 20px;
+}
+
+/*Правая часть*/
+
+.title {
+  position: relative;
+  top: 28px;
+  padding: 25px;
+}
+.title p {
+  color: #fff;
+  line-height: 21px;
+  font-family: RobotoBold;
+}
+.title span {
+  font-size: 3em;
+  font-family: RobotoBlack;
+}
+.circles {
+  position: relative;
+  width: 290px;
+  height: auto;
+  top: 5px;
+}
+.item {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+}
+.item1 {
+  top: 0;
+  left: 0;
+}
+.item2 {
+  top: 0;
+  left: 100px;
+}
+.item3 {
+  top: 0;
+  left: 200px;
+}
+.item4 {
+  top: 90px;
+  left: 0px;
+}
+.item5 {
+  top: 90px;
+  left: 100px;
+}
+.item6 {
+  top: 90px;
+  left: 200px;
+  background-color: transparent;
+  border: 3px solid #4a90e2;
+  color: #4a90e2;
+  text-align: center;
+  line-height: 14px;
+  font-family: RobotoBlack;
+  font-size: .8em;
+}
+.item6:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+.add-circle {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.add-circle b {
+  font-size: 2.2em;
+}
+.library {
+  position: relative;
+  top: 180px;
+  padding: 25px;
+}
+.library .document div {
+  width: 270px;
+  height: 190px;
+  background-color: #d8d8d8;
+  border: 1px solid #979797;
+}
+.document p {
+  font-size: 1em;
+  width: 290px;
+}
+.document a,
+.another-document a {
+  font-family: RobotoBlack;
+}
+.document span,
+.another-document span {
+  color: #a8a8a8;
+}
+.another-document {
+  position: relative;
+  border-top: 1px solid #d8d8d8;
+  font-size: 0.9em;
+  padding: 5px 0 5px 105px;
+  width: 270px;
+}
+.library .another-document div {
+  position: absolute;
+  display: block;
+  top: 20px;
+  left: 0;
+  width: 90px;
+  height: 60px;
+  background-color: #d8d8d8;
+  border: 1px solid #979797;
+}
+.another-document:last-child {
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 10px;
+}
+
+/*Футер*/
+
+footer {
+  padding: 25px;
+  position: relative;
+  top: 149px;
+  width: 280px;
+  font-size: 0.8em;
+}
+footer ul {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+}
+footer ul li a {
+  padding-right: 23px;
+}
+footer ul li a:last-child {
+  padding-right: 0;
+}
